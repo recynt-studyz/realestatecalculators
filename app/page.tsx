@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import ToolHeader from '@/components/ToolHeader'
 import MortgageCalculatorWrapper from '@/components/MortgageCalculatorWrapper'
 import AdBanner from '@/components/AdBanner'
+import AffiliateCTA from '@/components/AffiliateCTA'
 import FAQ from '@/components/FAQ'
 import type { FaqItem } from '@/components/FAQ'
 import Footer from '@/components/Footer'
@@ -196,6 +197,8 @@ export default function HomePage() {
               </li>
             </ul>
           </div>
+
+          <AffiliateCTA variant="buyer" />
 
           <div className="pb-10">
             <FAQ questions={faqs} />

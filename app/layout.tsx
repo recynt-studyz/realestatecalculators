@@ -8,7 +8,7 @@ const inter = Inter({ variable: '--font-inter', subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Real Estate Calculators 2026 — Free Property & Mortgage Tools',
   description:
-    'Free real estate calculators for mortgage payments, home affordability, rent vs buy, closing costs, investment ROI, fix and flip, cap rate, cash on cash, mortgage payoff and property tax. All 50 states. 2026 rates.',
+    'Free mortgage, affordability, rent vs buy, closing costs, investment ROI, cap rate, fix & flip, and property tax calculators. All 50 states. 2026 rates.',
   keywords: [
     'mortgage calculator',
     'home affordability calculator',

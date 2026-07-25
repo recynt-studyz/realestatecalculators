@@ -12,15 +12,21 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      <div className="relative min-h-[200px] flex flex-col" style={{ background: 'linear-gradient(135deg, #0a2e1a 0%, #166534 60%, #15803d 100%)' }}>
-        <div className="absolute inset-0 bg-black/40" />
-        <div className="relative z-10 flex flex-col flex-1">
+      <section className="relative bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/herobgrec.webp')" }}>
+        <div className="absolute inset-0 bg-black/55" />
+        <div className="relative z-10 pb-10">
           <ToolHeader />
-          <div className="flex-1 flex flex-col items-center justify-center text-center px-4 pb-8 pt-4">
-            <h1 className="text-3xl font-bold text-white">About RealEstateCalculators.app</h1>
+          <div className="text-center text-white px-4 py-8">
+            <h1 className="text-3xl sm:text-4xl font-bold mb-3 leading-tight">
+              About RealEstateCalculators.app
+            </h1>
+            <p className="text-lg text-white/80 max-w-xl mx-auto">
+              Free real estate tools for buyers, sellers, homeowners, and investors.
+            </p>
           </div>
         </div>
-      </div>
+        <div className="absolute bottom-0 inset-x-0 h-16 bg-gradient-to-t from-white dark:from-[#0f172a] to-transparent pointer-events-none" />
+      </section>
 
       <main className="max-w-3xl mx-auto px-4 py-12">
         <div className="prose prose-gray dark:prose-invert max-w-none text-gray-700 dark:text-gray-300 space-y-6">
@@ -72,7 +78,7 @@ export default function AboutPage() {
 
           <h2 className="text-xl font-bold text-gray-900 dark:text-[#e2e8f0]">Contact</h2>
           <p>
-            Questions, suggestions, or feedback? We'd love to hear from you. See the{' '}
+            Questions, suggestions, or feedback? We&apos;d love to hear from you. See the{' '}
             <Link href="/" className="text-[#166534] dark:text-green-400 hover:underline">footer</Link>
             {' '}for contact information.
           </p>

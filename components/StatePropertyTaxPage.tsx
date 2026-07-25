@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import ToolHeader from './ToolHeader'
 import PropertyTaxCalculatorWrapper from './PropertyTaxCalculatorWrapper'
 import AdBanner from './AdBanner'
+import AffiliateCTA from './AffiliateCTA'
 import FAQ from './FAQ'
 import type { FaqItem } from './FAQ'
 import Footer from './Footer'
@@ -215,9 +216,17 @@ export default function StatePropertyTaxPage({ stateAbbr }: { stateAbbr: string 
             </ul>
           </div>
 
+          <div className="mb-6">
+            <AffiliateCTA variant="buyer" />
+          </div>
+
           <div className="pb-10">
             <FAQ questions={faqs} />
           </div>
+
+          <p className="text-xs text-amber-700 dark:text-amber-400 leading-relaxed border border-amber-200 dark:border-amber-800 bg-amber-50 dark:bg-amber-900/10 rounded-xl p-4 mb-6">
+            <strong>Disclaimer:</strong> Property tax estimates are for educational purposes only. Actual taxes are set by local authorities and vary significantly within states. Rates change annually. Consult a licensed real estate agent and your county assessor for accurate tax figures.
+          </p>
 
           <div className="pb-6"><AdBanner slot="3333333333" /></div>
         </div>
