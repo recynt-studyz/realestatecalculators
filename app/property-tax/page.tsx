@@ -1,15 +1,10 @@
 import type { Metadata } from 'next'
-import dynamic from 'next/dynamic'
 import ToolHeader from '@/components/ToolHeader'
 import Footer from '@/components/Footer'
 import AdBanner from '@/components/AdBanner'
 import FAQ from '@/components/FAQ'
 
-const PropertyTaxCalculatorWrapper = dynamic(
-  () => import('@/components/PropertyTaxCalculatorWrapper'),
-  { ssr: false }
-)
-
+import PropertyTaxCalculatorWrapper from '@/components/PropertyTaxCalculatorWrapper'
 export const metadata: Metadata = {
   title: 'Property Tax Calculator 2026 — Estimate Annual Property Taxes by State',
   description: 'Calculate annual property taxes for any home value in all 50 states. Includes homestead exemptions, assessment ratios, and state-by-state comparison. Free and instant for 2026.',

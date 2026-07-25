@@ -1,16 +1,11 @@
 import type { Metadata } from 'next'
-import dynamic from 'next/dynamic'
 import ToolHeader from '@/components/ToolHeader'
 import Footer from '@/components/Footer'
 import AdBanner from '@/components/AdBanner'
 import AffiliateCTA from '@/components/AffiliateCTA'
 import FAQ from '@/components/FAQ'
 
-const InvestmentROICalculatorWrapper = dynamic(
-  () => import('@/components/InvestmentROICalculatorWrapper'),
-  { ssr: false }
-)
-
+import InvestmentROICalculatorWrapper from '@/components/InvestmentROICalculatorWrapper'
 export const metadata: Metadata = {
   title: 'Real Estate Investment ROI Calculator 2026 — Rental Property Returns',
   description: 'Calculate rental property ROI, cap rate, cash-on-cash return, and 5-year projection. Free real estate investment analysis tool for buy-and-hold investors in 2026.',

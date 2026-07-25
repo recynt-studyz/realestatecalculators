@@ -1,16 +1,11 @@
 import type { Metadata } from 'next'
-import dynamic from 'next/dynamic'
 import ToolHeader from '@/components/ToolHeader'
 import Footer from '@/components/Footer'
 import AdBanner from '@/components/AdBanner'
 import AffiliateCTA from '@/components/AffiliateCTA'
 import FAQ from '@/components/FAQ'
 
-const MortgagePayoffCalculatorWrapper = dynamic(
-  () => import('@/components/MortgagePayoffCalculatorWrapper'),
-  { ssr: false }
-)
-
+import MortgagePayoffCalculatorWrapper from '@/components/MortgagePayoffCalculatorWrapper'
 export const metadata: Metadata = {
   title: 'Mortgage Payoff Calculator 2026 — Pay Off Your Mortgage Early',
   description: 'Calculate how extra mortgage payments accelerate your payoff date and save on interest. See how $100, $500, or $1,000 extra per month reduces your loan term. Free tool.',

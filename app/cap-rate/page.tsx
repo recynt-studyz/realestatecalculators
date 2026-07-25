@@ -1,16 +1,11 @@
 import type { Metadata } from 'next'
-import dynamic from 'next/dynamic'
 import ToolHeader from '@/components/ToolHeader'
 import Footer from '@/components/Footer'
 import AdBanner from '@/components/AdBanner'
 import AffiliateCTA from '@/components/AffiliateCTA'
 import FAQ from '@/components/FAQ'
 
-const CapRateCalculatorWrapper = dynamic(
-  () => import('@/components/CapRateCalculatorWrapper'),
-  { ssr: false }
-)
-
+import CapRateCalculatorWrapper from '@/components/CapRateCalculatorWrapper'
 export const metadata: Metadata = {
   title: 'Cap Rate Calculator 2026 — Capitalization Rate for Rental Properties',
   description: 'Calculate the capitalization rate (cap rate) for any rental property. Free cap rate calculator with NOI breakdown, property value analysis, and market benchmarks for 2026.',

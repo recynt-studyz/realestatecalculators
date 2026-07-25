@@ -1,16 +1,11 @@
 import type { Metadata } from 'next'
-import dynamic from 'next/dynamic'
 import ToolHeader from '@/components/ToolHeader'
 import Footer from '@/components/Footer'
 import AdBanner from '@/components/AdBanner'
 import AffiliateCTA from '@/components/AffiliateCTA'
 import FAQ from '@/components/FAQ'
 
-const ClosingCostsCalculatorWrapper = dynamic(
-  () => import('@/components/ClosingCostsCalculatorWrapper'),
-  { ssr: false }
-)
-
+import ClosingCostsCalculatorWrapper from '@/components/ClosingCostsCalculatorWrapper'
 export const metadata: Metadata = {
   title: 'Closing Costs Calculator 2026 — Buyer & Seller Fees by State',
   description: 'Calculate closing costs for buyers and sellers in 2026. Includes transfer taxes, title insurance, origination fees, and all other closing fees by state. Free and instant.',

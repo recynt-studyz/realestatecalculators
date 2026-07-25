@@ -1,16 +1,11 @@
 import type { Metadata } from 'next'
-import dynamic from 'next/dynamic'
 import ToolHeader from '@/components/ToolHeader'
 import Footer from '@/components/Footer'
 import AdBanner from '@/components/AdBanner'
 import AffiliateCTA from '@/components/AffiliateCTA'
 import FAQ from '@/components/FAQ'
 
-const CashOnCashCalculatorWrapper = dynamic(
-  () => import('@/components/CashOnCashCalculatorWrapper'),
-  { ssr: false }
-)
-
+import CashOnCashCalculatorWrapper from '@/components/CashOnCashCalculatorWrapper'
 export const metadata: Metadata = {
   title: 'Cash on Cash Return Calculator 2026 — Rental Property CoC Analysis',
   description: 'Calculate cash-on-cash return for rental properties in 2026. Compare your actual cash yield against S&P 500, Treasury bonds, and savings rates. Free investment analysis tool.',

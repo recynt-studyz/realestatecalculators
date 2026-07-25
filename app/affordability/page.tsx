@@ -1,15 +1,10 @@
 import type { Metadata } from 'next'
-import dynamic from 'next/dynamic'
 import ToolHeader from '@/components/ToolHeader'
 import Footer from '@/components/Footer'
 import AdBanner from '@/components/AdBanner'
 import FAQ from '@/components/FAQ'
 
-const AffordabilityCalculatorWrapper = dynamic(
-  () => import('@/components/AffordabilityCalculatorWrapper'),
-  { ssr: false }
-)
-
+import AffordabilityCalculatorWrapper from '@/components/AffordabilityCalculatorWrapper'
 export const metadata: Metadata = {
   title: 'Home Affordability Calculator 2026 — How Much House Can I Afford?',
   description: 'Find out how much house you can afford in 2026. Calculate your maximum home price based on income, debts, down payment, and current mortgage rates. Free, instant, no signup.',

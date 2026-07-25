@@ -1,16 +1,11 @@
 import type { Metadata } from 'next'
-import dynamic from 'next/dynamic'
 import ToolHeader from '@/components/ToolHeader'
 import Footer from '@/components/Footer'
 import AdBanner from '@/components/AdBanner'
 import AffiliateCTA from '@/components/AffiliateCTA'
 import FAQ from '@/components/FAQ'
 
-const FixFlipCalculatorWrapper = dynamic(
-  () => import('@/components/FixFlipCalculatorWrapper'),
-  { ssr: false }
-)
-
+import FixFlipCalculatorWrapper from '@/components/FixFlipCalculatorWrapper'
 export const metadata: Metadata = {
   title: 'Fix and Flip Calculator 2026 — House Flipping Profit & ROI',
   description: 'Calculate fix and flip profit, ROI, and annualized returns for 2026. Includes hard money financing, holding costs, 70% rule check, and full cost breakdown for house flippers.',

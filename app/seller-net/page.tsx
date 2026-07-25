@@ -1,16 +1,11 @@
 import type { Metadata } from 'next'
-import dynamic from 'next/dynamic'
 import ToolHeader from '@/components/ToolHeader'
 import Footer from '@/components/Footer'
 import AdBanner from '@/components/AdBanner'
 import AffiliateCTA from '@/components/AffiliateCTA'
 import FAQ from '@/components/FAQ'
 
-const SellerNetCalculatorWrapper = dynamic(
-  () => import('@/components/SellerNetCalculatorWrapper'),
-  { ssr: false }
-)
-
+import SellerNetCalculatorWrapper from '@/components/SellerNetCalculatorWrapper'
 export const metadata: Metadata = {
   title: 'Seller Net Proceeds Calculator 2026 — How Much Will I Make Selling My Home?',
   description: 'Calculate your net proceeds after selling your home in 2026. Deducts agent commissions, closing costs, mortgage payoff, repairs, and estimates capital gains tax. Free tool.',

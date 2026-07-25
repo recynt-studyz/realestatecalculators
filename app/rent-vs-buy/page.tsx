@@ -1,15 +1,10 @@
 import type { Metadata } from 'next'
-import dynamic from 'next/dynamic'
 import ToolHeader from '@/components/ToolHeader'
 import Footer from '@/components/Footer'
 import AdBanner from '@/components/AdBanner'
 import FAQ from '@/components/FAQ'
 
-const RentVsBuyCalculatorWrapper = dynamic(
-  () => import('@/components/RentVsBuyCalculatorWrapper'),
-  { ssr: false }
-)
-
+import RentVsBuyCalculatorWrapper from '@/components/RentVsBuyCalculatorWrapper'
 export const metadata: Metadata = {
   title: 'Rent vs Buy Calculator 2026 — Is It Better to Rent or Buy a Home?',
   description: 'Compare the true cost of renting vs buying in 2026. Includes home appreciation, opportunity cost, tax benefits, and break-even year. Free rent vs buy analysis tool.',
